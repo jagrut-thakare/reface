@@ -1,9 +1,9 @@
 [submodule "src/taming-transformers"]
 	path = src/taming-transformers
-	url = "https://github.com/CompVis/taming-transformers@master#egg=taming-transformers"
+	url = "https://github.com/CompVis/taming-transformers.git"
 [submodule "eval_tool/Deep3DFaceRecon_pytorch_edit/nvdiffrast"]
 	path = eval_tool/Deep3DFaceRecon_pytorch_edit/nvdiffrast
-	url = https://github.com/NVlabs/nvdiffrast
+	url = "https://github.com/NVlabs/nvdiffrast.git"
 [submodule "src/clip"]
 	path = src/clip
-	url = "https://github.com/openai/CLIP.git@main#egg=clip"
+	url = "https://github.com/openai/CLIP.git"
