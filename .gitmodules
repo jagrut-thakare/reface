@@ -4,3 +4,6 @@
 [submodule "eval_tool/Deep3DFaceRecon_pytorch_edit/nvdiffrast"]
 	path = eval_tool/Deep3DFaceRecon_pytorch_edit/nvdiffrast
 	url = https://github.com/NVlabs/nvdiffrast
+[submodule "src/clip"]
+	path = src/clip
+	url = "https://github.com/openai/CLIP.git@main#egg=clip"
