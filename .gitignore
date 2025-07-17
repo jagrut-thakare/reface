@@ -10,8 +10,7 @@ Other_dependencies/face_parsing/79999_iter.pth
 
 
 #stable_diffsuin models Done
-pretrained_models/sd-v1-4.ckpt
-pretrained_models/sd-v1-4-modified-9channel.ckpt
+*.ckpt
 
 # Paint-by-example model Done
 checkpoints/model.ckpt

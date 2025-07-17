@@ -26,8 +26,8 @@ faceParser_label_list_detailed = ['background', 'lip', 'eyebrows', 'eyes', 'hair
                                   'nose', 'skin', 'ears', 'belowface', 'mouth', 
                                   'eye_glass', 'ear_rings']
 
-Dataset_maskPath='dataset/FaceData/CelebAMask-HQ/CelebA-HQ-mask'
-save_path='dataset/FaceData/CelebAMask-HQ/CelebA-HQ-mask/Overall_mask'
+Dataset_maskPath='/home/jagrut.thakare/Project/reface/dataset/FaceData/CelebAMask-HQ/CelebA-HQ-mask'
+save_path='/home/jagrut.thakare/Project/reface/dataset/FaceData/CelebAMask-HQ/CelebA-HQ-mask/Overall_mask'
 if not os.path.exists(save_path):
     os.mkdir(save_path)
 for i in range(30000):
@@ -43,8 +43,9 @@ for i in range(30000):
             im = np.equal(im, 255)
             mask[im]=ind+1
         else:
-            # print("image not exists")
-            # print(os.curdir)
+            print("image not exists")
+            print(os.curdir)
+            print(os.path.join(Dataset_maskPath,"%d"%int(i/2000) ,'{0:0=5d}'.format(i)+'_'+cate+'.png'))
             print(os.path.exists(os.path.join(Dataset_maskPath,"%d"%int(i/2000) ,'{0:0=5d}'.format(i)+'_'+cate+'.png')))
             # print(os.path.join(Dataset_maskPath,"%d"%int(i/2000) ,'{0:0=5d}'.format(i)+'_'+cate+'.png'))
     # save the mask
